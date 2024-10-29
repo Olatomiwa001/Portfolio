@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "poppins" sans-serrif;
+}
+header {
+    width: 70%;
+    background-color: #000641;
+    color: #fff;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+span {
+    color: #fc04a9;
+}
+/* .navbar ul {
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: o.5%;
+} */
+.navbar ul li a:hover {
+    color: #fc04a9;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+}
+.text h1 {
+    font-size: 50px;
+}
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    margin-top: 50px;
+    background: linear-gradient(#fc04a9, #000641);
+    text-decoration: none;
+    color: #fff;
+}
+.circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    right: 40px;
+    background: linear-gradient(#fc04a9, #000641);
+    border: 50%;
+    margin-left: 107%;
+    margin-top: -30px;
+    box-shadow: 0 0 90px #000641, 0 0 40px #000641;
+}
+.circle span {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: #000641;
+    border-radius: 50%;
+    margin-left: 10px;
+    top: 15px;
+    left: 3px;
+    bottom: 15px;
+    overflow: hidden;
+}
+.circle span img {
+    position: absolute;
+    width: 130%;
+    height: 120%;
+    z-index: 2;
+}

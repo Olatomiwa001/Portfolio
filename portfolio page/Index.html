@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olajesutomiwa | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+      >
+</head>
+<body>
+    <nav>
+        <div class="logo">Olajesutomiwa</div>
+        <ul class="navbar topnav" id="myTopnav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars icon" onclick="myFunction()"></i>
+    </nav>
+    <header>
+        <div class="header-text">
+            <h1>I am <span>Olajesutomiwa</span><br>
+            A well dedicated Data Analyst</h1>
+            <p>Welcome to my portfolio!</p>
+            <a href="olajesutomiwa Resume.pdf" class="btn">Download Resume</a>
+        </div>
+    
+        <div class="header-image">
+            <img src="IMG_6590.jpeg" alt="Olajesutomiwa">
+        </div>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Olajesutomiwa, a passionate and results-driven data analyst with a strong foundation in turning complex data into actionable insights. With hands-on experience in data collection, cleaning, and visualization, I specialize in helping businesses and organizations make data-informed decisions.
+
+            I excel at analyzing datasets, uncovering trends, and providing clear, data-backed recommendations that drive growth and efficiency. My skills include using tools like Python, SQL, Excel, and Power BI to perform deep dives into data, create interactive dashboards, and generate reports that speak to stakeholders in a meaningful way.
+            
+            Beyond the technical skills, I'm also deeply committed to understanding the business context of every project I work on. Whether it's optimizing marketing campaigns, analyzing sales data, or solving operational challenges, my goal is to use data to support decision-making and create measurable impact.
+            
+            </p>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>Data Analysis</h3>
+                <p>Expert in analyzing data using Python, Excel, and SQL.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Data Visualization</h3>
+                <p>Creating interactive dashboards using Power BI.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Machine Learning</h3>
+                <p>Experience in using statistical models and algorithms to analyze data.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <h3>Walmart Sales Dashboard</h3>
+                <p>Analyzed sales trends for inventory management using Power BI.</p>
+                <button onclick="toggleDetails(this)" ><a href="Instagram Dashboard.pdf">View Details</a></button>
+                <div class="details" style="display: none;">
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Customer Segmentation</h3>
+                <p>Segmented customers based on purchasing behavior using Python.</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="details" style="display: none;">
+                    <p>Details of the project, including the segmentation techniques used and insights gained.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Financial Forecasting</h3>
+                <p>Developed a financial model to predict future trends using time series.</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="details" style="display: none;">
+                    <p>Details of the project, covering the forecasting methods and results obtained.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="send_email.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>        
+        <p id="response-message"></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Olajesutomiwa. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/adetosin.adeoluwa.5?mibextid=LQQJ4d" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.X.com/olatomiwa001" target="_blank">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a href="http://linkedin.com/in/samuel-oyebamiji-1303ba247" target="_blank">
+                <img src="images.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/ola_jesu_tomiwa/profilecard/?igsh=aXUyeWxrMDN6ZXh6" target="_blank">
+                <img src="insta.jpeg" alt="Instagram">
+            </a>
+        </div>
+        
+    </footer>
+   
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar topnav";
+    }
+}
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
